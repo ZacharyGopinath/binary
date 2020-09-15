@@ -33,6 +33,7 @@ body{
 .inputBox{
     margin-top:10px;
     text-align: center;
+    font-family : inherit;
 }
 
 #input{
