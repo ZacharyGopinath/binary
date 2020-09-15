@@ -7,6 +7,6 @@ function calculate(){
         n = n + 1
         console.log(total)
     };
-   var finalTotal = document.getElementById("outputBox").append(total)
+   document.getElementById("outputBox").innerHTML = total;
 
 }
