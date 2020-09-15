@@ -1,10 +1,14 @@
 function calculate(){
     var num = document.getElementById("input").value;
     var isValid = true;
+    var i = 0;
     for (i = num.length - 1; i >=0; i--){
         if (num[i] != 1 || num[i] != 0){
-             var isValid = false;
+             isValid = false;
              }
+         else{
+             isValid = true;
+         }
     }
     if (isValid == true){
         var n = 0;
@@ -17,4 +21,4 @@ function calculate(){
        document.getElementById("outputBox").innerHTML = total;
     }else{
         document.getElementById("outputBox").innerHTML = "Not A Valid Binary #";
-}};
+}}
