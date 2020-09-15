@@ -1,12 +1,12 @@
 function calculate(){
     var num = document.getElementById("input").value;
-    
+    var isValid = true;
     for (i = num.length - 1; i >=0; i--){
         if (num[i] != 1 || num[i] != 0){
-             var isValid = False;
+             var isValid = false;
              }
     }
-    if (isValid == True){
+    if (isValid == true){
         var n = 0;
         var total = 0;
         for (i = num.length - 1; i >= 0; i--){
